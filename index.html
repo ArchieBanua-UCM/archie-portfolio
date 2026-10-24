@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Archie Banua, BSIT student interested in programming, AI assistants, and gaming.">
+  <title>ARCHIE — BEYOND THE SCREEN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">ARCHIE<span>_</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#mark-five">Mark Five</a></li>
+        <li><a href="#challenge">Challenge</a></li>
+        <li><a href="#closing">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow">BSIT Student</p>
+        <h1>ARCHIE<br><span class="grad">BEYOND THE SCREEN</span></h1>
+        <p class="tagline">Code by day. Strategy by night. Building toward something of my own.</p>
+        <p class="intro">Hi, I'm Archie Banua. I'm learning to program, I love gaming, and I want to build my own AI assistant someday.</p>
+        <div class="btn-row">
+          <a class="btn primary" href="#about">Explore my story</a>
+          <a class="btn ghost" href="#skills">See my skills</a>
+        </div>
+      </div>
+      <div class="orbit" aria-hidden="true">
+        <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+        <div class="core">A</div>
+        <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
+      </div>
+    </section>
+
+    
+    <section id="about" class="section reveal">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <div class="photo" id="photoBox">
+          <!-- EDIT: replace assets/profile.jpg with your own photo (same name, or change the path here) -->
+          <img id="profileImg" src="images/profile.jpg.jpg" alt="My profile photo" width="320" height="320">
+          <div class="fallback" id="photoFallback" hidden aria-label="Profile photo placeholder">AB</div>
+        </div>
+        <div class="about-text">
+         
+          <p>I'm <strong>Archie Banua</strong>, a BSIT student. I'm not that interested in programming but I'm trying to learn to become a developer.</p>
+          <p>Outside of code, I play games, including <strong>Arena Breakout Mobile</strong>. I enjoy the planning and teamwork that tactical games demand.</p>
+          <p class="note">University of Cebu, 3rd year, Still learning. Still building. Not done becoming.</p>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="interests" class="section reveal">
+      <h2>Hobbies &amp; interests</h2>
+      <p class="sub">Tap a card to learn more.</p>
+      <div class="cards">
+        <button class="card" type="button" aria-expanded="false">
+          <span class="icon" aria-hidden="true">&lt;/&gt;</span>
+          <h3>Programming</h3>
+          <p class="more" hidden>I'm studying it and want to build real projects. This website is one of them.</p>
+        </button>
+        <button class="card" type="button" aria-expanded="false">
+          <span class="icon" aria-hidden="true">AI</span>
+          <h3>AI assistants</h3>
+          <p class="more" hidden>I'm curious how assistants work and I want to build my own one day.</p>
+        </button>
+        <button class="card" type="button" aria-expanded="false">
+          <span class="icon" aria-hidden="true">◎</span>
+          <h3>Gaming</h3>
+          <p class="more" hidden>I enjoy Arena Breakout Mobile and other tactical games.</p>
+        </button>
+        <button class="card" type="button" aria-expanded="false">
+          <span class="icon" aria-hidden="true">★</span>
+          <h3>Becoming a developer</h3>
+          <p class="more" hidden>My long-term goal. To become a developer and have stable life someday</p>
+        </button>
+      </div>
+    </section>
+
+    
+    <section id="skills" class="section reveal">
+      <h2>Skills — honestly</h2>
+      <p class="sub">Just a Beginner.</p>
+      <div class="skills-grid">
+        <div class="panel">
+          <h3><span class="tag green">Beginner</span> I can do this at a basic level</h3>
+          <ul>
+            <li>HTML &amp; CSS basics</li>
+            <li>JavaScript basics</li>
+            <li>Networking basics</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3><span class="tag cyan">Learning</span> I'm still working on this</h3>
+          <ul>
+            <li>Building larger programs</li>
+            <li>How AI assistants work</li>
+            <li>Computer networking and configuration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="mark-five" class="section reveal">
+      <div class="panel feature">
+        <p class="eyebrow">Future project · Not built yet, Not sure yet.</p>
+        <h2>Mark Five</h2>
+        <p>Mark Five is the name of the AI assistant I want to build one day. Right now my only goal is to graduate and the reason I'm learning to code is to make one someday.</p>
+        <p class="note">I want my mark five to help me build more projects.</p>
+      </div>
+    </section>
+
+    
+    <section id="challenge" class="section reveal">
+      <h2>Mini-challenge: How well do you know Archie?</h2>
+      <div class="quiz panel" id="quiz">
+        <p class="quiz-count" id="quizCount" aria-live="polite"></p>
+        <p class="quiz-q" id="quizQ"></p>
+        <div class="quiz-opts" id="quizOpts"></div>
+        <p class="quiz-fb" id="quizFb" role="status" aria-live="polite"></p>
+        <button class="btn primary" id="quizNext" type="button" hidden>Next</button>
+      </div>
+    </section>
+
+    
+    <section id="closing" class="section closing reveal">
+      <h2>See you beyond the screen.</h2>
+      <p>Thanks for spending a few seconds with my story.</p>
+      <p class="note">banuaarchie83@gmail.com #09687752869</p>
+      <a class="btn primary" href="#home">Back to start</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Archie Banua · HCI Activity: The 45-Second Challenge</p>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top" hidden>↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
